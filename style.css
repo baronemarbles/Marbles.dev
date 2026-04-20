@@ -91,6 +91,10 @@ small{
     
 }
 
+.experiencias-container{
+    margin-bottom: 3.5rem;
+}
+
 .experiencia-container>.row{
     flex-direction: column;
 
@@ -195,6 +199,7 @@ small{
 .meus-projetos-container{
         border: 2px solid red;
         overflow: hidden;
+        margin-bottom: 3.5rem;
 }
 
 .meus-projetos-container>h2{
@@ -258,19 +263,37 @@ small{
 }
 
 /* experiências */
-.row>.exp-meta-container:nth-child(even){
-    flex-direction:row-reverse;
+.exp-impar{
+    /* flex-direction:row-reverse; */
+    direction: rtl;
 }
 
 .exp-meta-container{
     margin: 1rem;
-    display: flex;
-    gap: 1rem;
+    display: grid;
+    grid-template-columns:auto auto;
+    gap: 2rem;
+    justify-items: center;
+
 }
 
 .exp-meta-container>img{
     width: 600px;
 }
+
+.container-img-projeto{
+    height: 300px;
+    width: 600px; /*600PX*/
+    border-radius: 12px;
+}
+
+.container-img-projeto>img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+}
+
 
 #tecnicoVtvImg{
     filter: invert();
@@ -279,10 +302,44 @@ small{
     background-color: rgba(2, 2, 2, .7);
 }
 
-#meta-container-estagio{
+/* #meta-container-estagio{
     margin: 1rem;
     display: flex;
     gap: 1rem;
+    justify-content: center;
+} */
+
+.exp-title{
+    display: flex;
+    flex-direction: column;
+    text-wrap:wrap;
+    height: fit-content;
+    max-width: 400px;
+    font-size: 2rem;
+    font-weight: 600;
+    margin: auto 0;
+    
+    /* color: white; */
+}
+
+.exp-title>p{
+    font-size: 1.7rem;
+    margin-bottom:1rem;
+    flex-shrink: 2;
+}
+
+.exp-title>a{
+    font-size: 1.7rem;
+    padding: .5rem;
+    border: 2px solid;
+    border-radius: 12px;
+    margin-top: 1rem;
+    flex-shrink: 2;
+}
+
+.exp-title>a:hover{
+    background-color: #c7c8ff;
+    cursor: pointer;
 }
 
 #meta-container-estagio>.exp-title{
@@ -298,32 +355,67 @@ small{
 }
 
 
-.exp-title{
-    height: fit-content;
+
+/*Secao e-mail*/
+
+.titulos-secao{
     width: fit-content;
-    font-size: 2rem;
-    font-weight: 600;
-    margin: auto 0;
-    color: white;
+    height: fit-content;
+    margin-inline: auto;
 }
 
-.exp-title>p{
-    font-size: 1.7rem;
-    margin-bottom:1rem
+.titulos-secao>a{
+    color: var(--java);
 }
 
-.exp-title>a{
-    font-size: 1.7rem;
-    padding: .5rem;
-    border: 2px solid;
+.formulario{
+    flex-direction: column;
+    width: 50%;
+    border:2px solid #efefef;
     border-radius: 12px;
-    margin-top: 1rem;
+    padding: 2rem;
+    box-shadow: 0 0 30px rgba(204, 204, 204, .8);
+    margin-inline:auto;
+    gap: .75rem;
+    transition: width 1s ease;
+
 }
 
-.exp-title>a:hover{
-    background-color: #c7c8ff;
-    cursor: pointer;
+.formulario>*{
+    font-size: 1.05rem;
 }
+
+.formulario>input{
+    width: 90%;
+    margin-inline: auto;
+    font-size: 1.1rem;
+    height: 3.15rem;
+    padding: .25rem;
+    border-radius: 8px;
+    border: 1px solid gray;
+    transition: width 1s ease;
+    
+}
+
+.formulario>input:focus{
+    width: 100%;
+}
+
+.formulario>button{
+    font-weight: bold;
+    width: fit-content;
+    padding: .25rem .5rem;
+    cursor: pointer;
+    background-color: var(--vue);
+    border-style: none;
+    border:2px solid #a1ffc8;
+    box-shadow: 0 0 30px#6feca3;
+    border-radius: 8px;
+    margin-left:4.7% ;
+}
+
+
+
 @keyframes inifiniteSlider{
     from{
        
