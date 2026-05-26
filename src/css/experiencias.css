@@ -212,6 +212,13 @@ h3{
     border-radius: 8px;
 }
 
+/*videos*/
+
+.youtube-iframe{
+    height: 350px;
+    width: 700px;
+}
+
 #descricao-section{
     margin-bottom: var(--qtd-margem-entre-sessao);
 }
