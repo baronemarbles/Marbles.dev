@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+    <header>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="/src/css/blue-bird.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+        <title>Projeto pessoal-Blue Bird</title>
+    </header>
+    <body>
+        <div class="root">
+            <div class="head-content">
+                <a href="/src/projetos-pessoais.html"><button class="botao-voltar">&#128072Voltar</button></a>
+
+                <h1>Blue Bird</h1>
+                <div class="duracao-container">
+                    <img src="/src/assets/calendarioSVG.svg" alt="imagem SVG de um calendário">
+                    <h4>Fevereiro 2025 - Fevereiro 2025</h4>
+                </div>    
+
+                <div class="badges-container d-flex">
+                    <div class="first-row row d-flex">
+                        <div class="badge" id="xp-badge" style="--highlight:#c292ff">Xp</div>
+                        <div class="badge" id="javascript-badge" style="--highlight:#a7acf9">JavaScript</div>
+                        <div class="badge" id="projeto-badge" style="--highlight:#a3a3a3">Estudo</div>
+                    </div>                
+                </div>
+            </div>
+            <div class="recuo-padrao" id="descricao-section">
+                <h3>História</h3>
+    
+                <p>Eu e meu amigo João Pedro decidimos refazer a interface do Twitter, hoje <em>"X"</em>, só que com uma identidade visual nossa. Criamos uma página de login personalizada e a inicial(home). Foi pouco e nós paramos com o projeto por outras razões, mas valeu muito a pena porque pudemos vislumbrar como que funciona uma PullRequest, como é trabalhar com outra pessoa e isolar o ambiente de cada um em um branch separado para não correr o risco de prejudicar o branch de produção.</p>
+                <br>
+
+                <h3>Desafios</h3>
+                <p>Aprender os comandos de criação e alteração entre branches, git stash, pull e merge.</p>
+
+            </div>
+            <div id="fotos-section">
+                
+                <h3 class="recuo-padrao title-media-section">Fotos do site&#128247</h3>
+    
+                <div class="container-fotos-projeto d-grid" id="coletanea-fatosefontes">
+                    <div class="grid-offset" id="left-side-grid">
+    
+                    </div>
+                    
+                    <div id="content-grid">
+                        <div class="row d-flex" id="first-row">
+                            <div class="container-foto" id="foto-1"><img src="/src/assets/projetos-pessoais/blueBird/blueBird-home.png" alt="imagem da página de login do site"></div>
+                            <div class="container-foto" id="foto-2"><img src="/src/assets/projetos-pessoais/blueBird/blueBird-login.png" alt="imagem da página inicial do site"></div>
+                        </div>
+                    </div>
+    
+                    <div class="grid-offset" id="right-side-grid"></div>
+    
+                </div>
+            </div>
+            <br>
+
+            <footer>
+                <h2 class="titulos-secao" id="titulo-secao-email">Ficou <a>interessado</a> sobre meu trabalho ?</h2>
+                <h2 class="titulos-secao" id="titulo-secao-email-destaque">Vamos conversar!</h2>
+                <div class="form-container">
+                    <form class=" formulario d-flex" action="https://formsubmit.co/5d43cd76a6474870756ec90a44165499" method="POST">
+                        <input type="hidden" name="_subject" value="Novo envio do formulário do Portifolio!">
+                        <input type="hidden" name="_blacklist" value="Sua conta foi suspensa/bloqueada. Clique aqui para atualizar,Verifique sua identidade agora ou perderá o acesso,Sua conta tem um login suspeito">
+                        <input type="text" name="name" placeholder="Sua mensagem">
+                        <input type="email" name="email" placeholder="Seu e-mail" required>
+                        <button type="submit">Enviar &#128521</button>
+                        <input type="hidden" name="_autoresponse" value="Obrigado por entrar em contato! Em breve o responderei.">
+                        <input type="hidden" name="_next" value="http://127.0.0.1:5501/thx-page.html">
+                    </form> 
+                </div>
+            </footer>
+        </div>
+    </body>
+    
+
+    <script src="/src/js/fatosefontes.js"></script>
+</html>

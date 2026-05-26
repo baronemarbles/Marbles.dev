@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+    <header>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="/src/css/scrimba-javascript.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+        <title>Projeto pessoal-Scrimba JavaScript</title>
+    </header>
+    <body>
+        <div class="root">
+            <div class="head-content">
+                <a href="/src/projetos-pessoais.html"><button class="botao-voltar">&#128072Voltar</button></a>
+
+                <h1>NBA Scoreboard Simulation</h1>
+                
+                <div class="duracao-container">
+                    <img src="/src/assets/calendarioSVG.svg" alt="imagem SVG de um calendário">
+                    <h4>Abril 2025 - Maio 2025</h4>
+                </div>    
+
+                <div class="badges-container d-flex">
+                    <div class="first-row row d-flex">
+                        <div class="badge" id="xp-badge" style="--highlight:#c292ff">Xp</div>
+                        <div class="badge" id="javascript-badge" style="--highlight:#a7acf9">JavaScript</div>
+                        <div class="badge" id="projeto-badge" style="--highlight:#a3a3a3">Estudo</div>
+                    </div>                
+                </div>
+            </div>
+            <div class="recuo-padrao" id="descricao-section">
+                <h3>História</h3>
+    
+                <p>Projeto inicial do <a href="https://scrimba.com/learn-javascript-c0v">curso gratuito de JavaScript</a> da Scrimba, consistia em utilizar e estudar os usos dos <em>EventListeners</em> na D.O.M e criar um contador. Tema livre. Eu escolhi fazer uma simulação de uma mesa de placar da NBA.</p>
+                <p>Estariam distribuidos os times do confronto, ao lado de cada brasão a quantidade de pontos que o time pontuou. Abaixo da pontuação um botão de "start" para iniciar a partida.</p>
+                <p>Uma vez que a partida foi iniciada, um elemento de vídeo, simulando o player da transmissão da partida para a mesa, um menu vertical se cria na lateral direita do player para facilitar o controle da pontuação e conforme os pontos fossem sendo anotados, os mesarios interagiriam com os botões e por consequência incrementando o placar oficial acima.</p>
+                <br>
+
+                <h3>Desafios</h3>
+                <p>Entender as <em>Arrow functions</em>, selecionar os elementos através do <em>.querySelector</em> e <em>selectElementById</em>, criar funções com o paradigma funcional, e lógica para o incremento do placar</p>
+
+            </div>
+
+            <div id="fotos-section">
+                
+                <h3 class="recuo-padrao title-media-section">Fotos do projeto&#128247</h3>
+    
+                <div class="container-fotos-projeto d-grid" id="coletanea-fatosefontes">
+                    <div class="grid-offset" id="left-side-grid">
+    
+                    </div>
+                    
+                    <div id="content-grid">
+                        <div class="row d-flex" id="first-row">
+                            <div class="container-foto" id="foto-1"><img src="/src/assets/projetos-pessoais/scoreBoard-NBA/Scoreboard-home.png" alt="imagem da primeira seção do site que contém brasão dos times, pontuação e botão de start."></div>
+                            <div class="container-foto" id="foto-2"><img src="/src/assets/projetos-pessoais/scoreBoard-NBA/Scoreboard-playing.png" alt='imagem da segunda seção do site que contém "player" da transmissão e menu dos botões de incremento de pontos.'></div>
+                        </div>
+    
+                        <div class="row d-flex" id="second-row">
+                            <div class="container-foto" id="foto-3"><img src="/src/assets/projetos-pessoais/scoreBoard-NBA/scoreboard-afterScore.png" alt="imagem da primeira seção do site depois de incrementar a pontuação, que contém brasão dos times, pontuação e botão de start."></div>
+                        </div>
+                    </div>
+    
+                    <div class="grid-offset" id="right-side-grid"></div>
+    
+                </div>
+            </div>
+            <br>
+
+        
+
+            <footer>
+                <h2 class="titulos-secao" id="titulo-secao-email">Ficou <a>interessado</a> sobre meu trabalho ?</h2>
+                <h2 class="titulos-secao" id="titulo-secao-email-destaque">Vamos conversar!</h2>
+                <div class="form-container">
+                    <form class=" formulario d-flex" action="https://formsubmit.co/5d43cd76a6474870756ec90a44165499" method="POST">
+                        <input type="hidden" name="_subject" value="Novo envio do formulário do Portifolio!">
+                        <input type="hidden" name="_blacklist" value="Sua conta foi suspensa/bloqueada. Clique aqui para atualizar,Verifique sua identidade agora ou perderá o acesso,Sua conta tem um login suspeito">
+                        <input type="text" name="name" placeholder="Sua mensagem">
+                        <input type="email" name="email" placeholder="Seu e-mail" required>
+                        <button type="submit">Enviar &#128521</button>
+                        <input type="hidden" name="_autoresponse" value="Obrigado por entrar em contato! Em breve o responderei.">
+                        <input type="hidden" name="_next" value="http://127.0.0.1:5501/thx-page.html">
+                    </form> 
+                </div>
+            </footer>
+        </div>
+    </body>
+    
+
+    <script src="/src/js/fatosefontes.js"></script>
+</html>

@@ -1,0 +1,245 @@
+:root{
+    --php:#a7acf9;
+    --javascript:#fff070;
+    --react:#6fddff;
+    --python: #459fff;
+    --machine-learning:#df5b32;
+    --java:#ff6f71;
+    --c:#5c91c8;
+    --vue:#6feca3;
+    --xp:#95d68d;
+    --typescript:#4a98e9;
+    --bootstrap:#c292ff;
+    --bd:#61b9ff;
+    --ferramentas:#a3a3a3;
+    --skills: #cf97e6;
+    --graduacao:#c78fff;
+
+    --bg:#151515;
+    --bg-content:#fdfdfd;
+    --content-text-color:#101010;
+
+
+
+    --qtd-margem-entre-sessao:.5rem;
+    --qtd-recuo-padrao:5%;
+    --qtd-projetos:3;
+    --width:390;
+    --height:220;
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+}
+
+body{
+    background-color: var(--bg); 
+    color: var(--content-text-color);
+    font-family: "Inter";
+    max-width: 100dvw;
+    max-height:100%;
+    overflow-x: hidden;
+}
+
+.root{
+    background-color: var(--bg-content);
+    height: 100%;
+    border-radius: 20px;
+}
+
+h1{
+    font-size: 5.92rem;
+    font-weight:bold;
+    text-align:center;
+    line-height: 4.92rem;
+    margin-bottom: .2rem;
+}
+h2{
+    font-size: 2rem;
+}
+
+.header{
+    margin-bottom: 2rem;
+}
+
+small{
+    font-size: .75rem;
+    font-weight: 500;
+    line-height: 2rem;
+}
+
+a{
+    color: #5258a7;
+}
+
+p{
+    line-height: 1.6rem;
+    color:rgb(31, 33, 35);
+}
+
+.d-flex{
+    display: flex;
+}
+
+.d-none{
+    display: none;
+}
+
+.d-grid{
+    display: grid;
+}
+
+.recuo-padrao{
+    margin-inline: 5%;
+}
+
+.botao-voltar{
+    background-color: #f0f0f0;
+    border: 1px solid #b6b6b6;
+    color: #252525;
+    padding: .5rem;
+    border-radius: 12px;
+    margin: .5rem;
+    cursor: pointer;
+}
+
+/*badges styles*/
+
+#php-badge{
+  background-color: var(--php);
+  color:#2d3275;  
+}
+
+#javascript-badge{
+    background-color:#f7da37;
+    color:#413a14;
+}
+
+#python-badge{
+    background-color:var(--python);
+    color: #0c2e52;
+}
+
+#java-badge{
+  background-color: var(--java);
+  color:#411616;  
+}
+
+#c-badge{
+  background-color: var(--c);
+  color: #14293a;  
+}
+
+#vue-badge{
+  background-color: var(--vue);  
+  color: #143f26;
+}
+
+#typescript-badge{
+  background-color: var(--typescript);
+  color:#11273d  
+}
+
+#bootstrap-badge{
+  background-color: var(--bootstrap);  
+  color:#231336;
+}
+
+#mysql-badge{
+  background-color: var(--bd);  
+  color: #1b3447;
+}
+
+#mariadb-badge{
+  background-color: var(--bd);  
+  color: #1b3447;
+}
+
+#git-badge{
+  background-color: var(--ferramentas);  
+  color: #232222;
+}
+
+#figma-badge{
+  background-color: var(--ferramentas);  
+  color: #232222;
+}
+
+#photoshop-badge{
+  background-color: var(--ferramentas);  
+  color: #232222;
+}
+#react-badge{
+    background-color: var(--react);
+  color: #15414e;
+}
+
+#xp-badge{
+    background-color:var(--xp);
+    color:#194c13;
+}
+
+#docker-badge{
+    background-color: var(--typescript);
+    color:#0d2c4c;
+}
+
+#estudo-badge{
+    background-color:var(--xp);
+    color:#400788;
+}
+
+#hardSkills-badge{
+    background-color:var(--skills);
+    color:#371545;
+}
+
+#softSkills-badge{
+    background-color:var(--skills);
+    color:#371545;
+}
+
+#machine-learning-badge{
+    background-color: var(--machine-learning);
+    color:#3a0d01;
+}
+
+#graduacao-badge{
+    background-color:var(--graduacao);
+    color: #3a195b;
+}
+
+
+@media (min-width:451px){
+    .root{
+        margin: 2% 4%;
+        padding: 2% 0;
+    }
+}
+
+
+@media (max-width:450px){
+    .root{
+        width: 100%;
+        margin: 0 !important;
+    }
+    .exp-meta-container {
+        margin: 1rem;
+        display: grid;
+        grid-template-columns: 40% 1fr;
+        gap: 2rem;
+        justify-items: center;
+    }
+
+    small{
+        line-height:.5rem;
+        margin-top: .25rem;
+    }
+
+    /* p{
+        font-size: 18px;
+    } */
+}

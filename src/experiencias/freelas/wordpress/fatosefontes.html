@@ -1,0 +1,106 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+    <header>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="/src/css/experiencias.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+        <title>Experiência->Fatos e Fontes</title>
+    </header>
+    <body>
+        <div class="root">
+            <div class="head-content">
+                <a href="/src/index.html"><button class="botao-voltar">&#128072Voltar</button></a>
+
+                <h1>Fatos e Fontes</h1>
+                
+                <div class="duracao-container">
+                    <img src="/src/assets/calendarioSVG.svg" alt="imagem SVG de um calendário">
+                    <h4>Abril 2025 - Presente</h4>
+                </div>    
+
+                <div class="badges-container d-flex">
+                    <div class="first-row row d-flex">
+                        <div class="badge" id="projeto-badge" style="--highlight:#c292ff">Projeto</div>
+                        <div class="badge" id="wordpress-badge" style="--highlight:#a7acf9">Wordpress</div>
+                        <div class="badge" id="freela-badge" style="--highlight:#a3a3a3">Freela</div>
+                    </div>                
+                </div>
+            </div>
+            <div class="recuo-padrao" id="descricao-section">
+                <h3>História</h3>
+    
+                <p>Um grupo de jornalistas muito talentosos, apaixonados e determinados decidiram criar o próprio portal e empreender. Desde então tive a oportunidade de desenvolver o tema do site e auxiliar criação da identidade dele.</p>
+                <br>
+                <p>A ideia era que a partir de um tema de referência desenvolver um tema próprio e com a personalidade do <a href="https://fatosefontes.com.br/"><em>Fatos e Fontes(FF)</em></a>, bem como alinhar a identidade visual da marca.</p>
+                <div class="container-identidades-visuais">
+                    <img class="identidades-visuais"src="/src/assets/fatosefontes/fatosEFontesBannerYT.png" alt="Banner que fiz para o canal do Youtube do FF">
+                    <small>Banner que fiz para o <a href="https://www.youtube.com/@sitefatosefontes">canal do Youtube</a></small>
+                </div>
+                <br>
+
+                <h3>Desafios</h3>
+                <p>Esse foi meu primeiro trabalho desenvolvendo com o Wordpress, apesar de já ter desenvolvido aplicações locais em PHP, precisei aprender as funções e seus parametros,hooks, estrutura de arquivos e design de sistema do WordPress.</p>
+                <p>Também aprendi a criar post's e campos customizados, e os utilizar apropriadamente nas <em>WP_Queries. E para isso utilizei dos plug-ins:</em></p>
+                <ul>
+                    <li>Advanced Custom Fields</li>
+                    <li >Custom Post Types UI</li>
+                </ul>
+            </div>
+
+            <div id="fotos-section">
+                
+                <h3 class="recuo-padrao title-media-section">Fotos do site&#128247</h3>
+    
+                <div class="container-fotos-projeto d-grid" id="coletanea-fatosefontes">
+                    <div class="grid-offset" id="left-side-grid">
+    
+                    </div>
+                    
+                    <div id="content-grid">
+                        <div class="row d-flex" id="first-row">
+                            <div class="container-foto" id="foto-1"><img src="/src/assets/fatosefontes/ff1.png" alt="imagem de uma seção do site do Fatos e Fontes"></div>
+                            <div class="container-foto" id="foto-2"><img src="/src/assets/fatosefontes/ff2.png" alt="imagem de uma seção do site do Fatos e Fontes"></div>
+                        </div>
+    
+                        <div class="row d-flex" id="second-row">
+                            <div class="container-foto" id="foto-3"><img src="/src/assets/fatosefontes/ff3.png" alt="imagem de uma seção do site do Fatos e Fontes"></div>
+                            <div class="container-foto" id="foto-4"><img src="/src/assets/fatosefontes/ff4.png" alt="imagem de uma seção do site do Fatos e Fontes"></div>
+                        </div>
+    
+                        <div class="row d-flex" id="third-row">
+                            <div class="container-foto" id="foto-5"><img src="/src/assets/fatosefontes/ff5.png" alt="imagem de uma seção do site do Fatos e Fontes"></div>
+                            <div class="container-foto" id="foto-6"><img src="/src/assets/fatosefontes/ff6.png" alt="imagem de uma seção do site do Fatos e Fontes"></div>
+                        </div>
+                    </div>
+    
+                    <div class="grid-offset" id="right-side-grid"></div>
+    
+                </div>
+            </div>
+
+        
+
+            <footer>
+                <h2 class="titulos-secao" id="titulo-secao-email">Ficou <a>interessado</a> sobre meu trabalho ?</h2>
+                <h2 class="titulos-secao" id="titulo-secao-email-destaque">Vamos conversar!</h2>
+                <div class="form-container">
+                    <form class=" formulario d-flex" action="https://formsubmit.co/5d43cd76a6474870756ec90a44165499" method="POST">
+                        <input type="hidden" name="_subject" value="Novo envio do formulário do Portifolio!">
+                        <input type="hidden" name="_blacklist" value="Sua conta foi suspensa/bloqueada. Clique aqui para atualizar,Verifique sua identidade agora ou perderá o acesso,Sua conta tem um login suspeito">
+                        <input type="text" name="name" placeholder="Sua mensagem">
+                        <input type="email" name="email" placeholder="Seu e-mail" required>
+                        <button type="submit">Enviar &#128521</button>
+                        <input type="hidden" name="_autoresponse" value="Obrigado por entrar em contato! Em breve o responderei.">
+                        <input type="hidden" name="_next" value="http://127.0.0.1:5501/thx-page.html">
+                    </form> 
+                </div>
+            </footer>
+        </div>
+    </body>
+    
+
+    <script src="/src/js/fatosefontes.js"></script>
+</html>

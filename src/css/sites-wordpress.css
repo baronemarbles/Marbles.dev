@@ -1,0 +1,76 @@
+@import "./global.css";
+@import "./footer.css";
+@import "./experiencias.css";
+
+.container-projetos-wordpress{
+    display: flex;
+    gap: 1.5rem;
+}
+
+#logoMK{
+    width: 33.3%;
+    height: 300px;
+    object-fit: contain;
+}
+
+.container-projetos-wordpress>.container-identidades-visuais{
+    background-color:rgba(30,30,30,.5);
+    background-blend-mode: color-dodge;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 33.3%;
+    overflow: hidden;
+    height: fit-content;
+    border-radius: 8px;
+}
+
+.container-projetos-wordpress>.container-identidades-visuais:hover>img{
+    scale: 105%;
+}
+
+.container-projetos-wordpress>.container-identidades-visuais>img{
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+    box-shadow: 0 0 15px rgba(15,15,15,.2);
+    filter: brightness(65%);
+    transition: .5s all  ease;
+}
+
+.container-projetos-wordpress>.container-identidades-visuais>h3{
+    position: absolute;
+    text-shadow: 0 0 20px rgba(30,30,30,.7);
+    z-index: 2;
+}
+
+.container-projetos-wordpress>.container-identidades-visuais>h3>a{
+    color: white;
+}
+
+.container-projetos-wordpress>.container-identidades-visuais>h3>a:hover{
+    color: #d4dbff;
+}
+
+
+
+@media (max-width:450px){
+    .container-projetos-wordpress > .container-identidades-visuais{
+        height: 120px;
+        width: 40%;
+    }
+
+    .container-projetos-wordpress > .container-identidades-visuais > h3{
+        text-wrap: wrap;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    #logoMK{
+        height: 120px;
+        width: 20%;
+    }
+
+
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+    <header>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="/src/css/ia.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+        <title>Experiência Acadêmica- PCG 6o Semestre</title>
+    </header>
+    <body>
+        <div class="root">
+            <div class="head-content">
+                <a href="/src/formacao/unisantos.html"><button class="botao-voltar">&#128072Voltar</button></a>
+
+                <h1>Pesquisa Curricularizada da Graduação</h1>
+                <h2>6o Semestre - Unisantos</h2>
+                
+                <div class="duracao-container">
+                    <img src="/src/assets/calendarioSVG.svg" alt="imagem SVG de um calendário">
+                    <h4>AGOSTO 2025 - DEZEMBRO 2025</h4>
+                </div>    
+
+                <div class="badges-container d-flex">
+                    <div class="first-row row d-flex">
+                        <div class="badge" id="xp-badge" style="--highlight:#c292ff">XP Acadêmico</div>
+                        <div class="badge" id="python-badge" style="--highlight:#a3a3a3">Python</div>
+                        <div class="badge" id="machine-learning-badge" style="--highlight:#a3a3a3">Machine Learning</div>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="recuo-padrao" id="descricao-section" style="margin-top: 2rem";>
+                <h3>Pesquisa Curricularizada da Graduação, o que é ?</h3>
+
+                <div class="container-projeto-previsao">
+                    <p>O PCG é um instrumento de avialiação, ainda vigente no ano de 2025, da <a href="/src/formacao/unisantos.html">graduação de Ciência de Computação na Unisantos</a>. É um trabalho multidiciplinar que engloba e requere diferentes olhares, abordagns de pesquisa e que permite desenvolver as habilidades necessárias para aquele semestre. Estes trabalhos também podem evoluir para produções acadêmicas, uma vez que aprovado na banca de avaliação, o trabalho é encaminhado para a feira de Mostra Acadêmica de Pesquisas(MAP) da área de científicos da área de computação e tecnologia. Deste modo abrindo portas para o ramo de pesquisa acadêmica e possíveis publicações de artigos. </p>
+                    
+                    <br>
+
+                    <h3>Tema: </h3>
+                    <p style="margin-bottom: var(--qtd-margem-entre-sessao);">Desenvolvimento de um algoritimo que utilizasse um modelo de <b>aprendizado de Máquina</b> para solucionar um problema. O projeto tinha o tema livre e pudiamos escolher o modelo que mais se adequava as necessidades da solução.</p>
+                    <p>Escolhemos o tema de Análise de Linguagem Natural sobre matérias refentes a econômia global e correlacionar algum índice para prever uma queda ou subida da cotação do dólar em real.</p>
+                    <div class="container-identidades-visuais d-flex" id="projeto-academico-ia-designs">
+                        <img class="identidades-visuais" id="codigo-1" src="/src/assets/projetos-academicos/ia/machineLearningProject.jpeg" alt="Tela do slide de apresentação do código" style="box-shadow:0 0 30px rgba(20,20,20,.125);">
+                    </div>
+                    <div class="container-legenda">
+                            <small>Imagens do site proposto para apresentação da manipulação do <em>Dataset</em></small>
+                    </div>
+                    <br>
+    
+                    <p>A princípio escolhemos o modelo <b>BERT</b> para processar o texto das requisições da API "newsapi", utilizamos a abordagem de aprendizado semi-supervisionado e consumimos o .csv diario do banco central dos Estados Unidos, o "Federal Reserve". Classificamos as matérias identificando palavras-chave e a partir dessa seleção comparando elas com a movimentação do dólar no dia de publicação.</p>
+                    <br>
+                    <p>E dependendo da movimentação, classificavamos entre: 0=neutro,1=positivo e 2=negativo. A matéria teria um peso positivo se o dólar subisse no mesmo dia em que a matéria fosse publicada e vice-versa. Caso não houvesse alteração na precificação, recebia o valor neutro, 0. A partir disso utilizamos a regressão linear para estabelecer uma correlação entre os dias em que houveram movimentações e produziamos um valor estipulado do dólar para o próximo dia.</p>
+                    <br>
+                </div>
+
+
+
+            <footer>
+                <h2 class="titulos-secao" id="titulo-secao-email">Ficou <a>interessado</a> sobre meu trabalho ?</h2>
+                <h2 class="titulos-secao" id="titulo-secao-email-destaque">Vamos conversar!</h2>
+                <div class="form-container">
+                    <form class=" formulario d-flex" action="https://formsubmit.co/5d43cd76a6474870756ec90a44165499" method="POST">
+                        <input type="hidden" name="_subject" value="Novo envio do formulário do Portifolio!">
+                        <input type="hidden" name="_blacklist" value="Sua conta foi suspensa/bloqueada. Clique aqui para atualizar,Verifique sua identidade agora ou perderá o acesso,Sua conta tem um login suspeito">
+                        <input type="text" name="name" placeholder="Sua mensagem">
+                        <input type="email" name="email" placeholder="Seu e-mail" required>
+                        <button type="submit">Enviar &#128521</button>
+                        <input type="hidden" name="_autoresponse" value="Obrigado por entrar em contato! Em breve o responderei.">
+                        <input type="hidden" name="_next" value="http://127.0.0.1:5501/thx-page.html">
+                    </form> 
+                </div>
+            </footer>
+        </div>
+    </body>
+    
+
+    <script src="/src/js/fatosefontes.js"></script>
+</html>

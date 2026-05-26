@@ -1,0 +1,58 @@
+.projetos-container{
+    display: flex;
+    height: 220px;
+    width: 80%;
+    position: relative;
+    mask-image:linear-gradient(to right, transparent, black, transparent);
+    margin-inline: auto;
+    /* border: 2px solid orange; */
+
+}
+
+
+.projeto{
+    width: 390px;
+    height: 220px;
+    background-color:rgba(30,30,30,.5);
+    background-blend-mode: color-dodge;
+    position: absolute;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-wrap:balance;
+    left: 100%;
+    animation: inifiniteSlider 17s linear infinite;
+    animation-delay: calc((17s/var(--qtd-projetos) * (var(--position) - 1))) !important;   
+
+}
+
+.projetos-container:hover>.projeto{
+    animation-play-state: paused !important;
+    filter:grayscale(100%);
+}
+
+.projeto:hover{
+    filter: grayscale(0%) !important;
+    cursor: pointer;
+    box-shadow: 0 0 15px rgba(30,30,30,.2);
+
+}
+
+
+.projeto>h3{
+    position: absolute;
+    z-index:2;
+    color: #f0f0f0;
+    text-shadow: 0 0 20px rgba(30,30,30,.5);
+    text-align: center;
+    text-wrap: balance;
+}
+
+.projeto>img{
+    width: 100%;
+    height:100%;
+    object-fit:cover;
+    filter: brightness(65%);
+    border-radius: inherit;
+
+}

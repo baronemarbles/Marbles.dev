@@ -1,0 +1,141 @@
+@import "/src/css/experiencias.css";
+
+/* 
+h2{
+    text-align: center;
+} */
+
+.badge{
+    color: #363636;
+}
+
+#react-badge{
+    background-color:var(--bd);
+    color: #1b3447;
+}
+
+#xp-badge{
+    background-color:var(--xp);
+    color:#194c13;
+}
+
+#python-badge{
+    background-color:var(--python);
+    color:#1b3447;
+}
+
+#javaScript-badge{
+    background-color:#f7da37;
+    color:#413a14;
+}
+
+#docker-badge{
+    background-color: var(--typescript);
+    color:#0d2c4c;
+}
+
+#php-badge{
+    background-color:var(--php);
+    color:#2d3275;
+}
+
+#mariaDB-badge{
+    background-color:var(--bd);
+    color:#1b3447;
+}
+
+#hardSkills-badge{
+    background-color:var(--skills);
+    color:#371545;
+}
+
+#softSkills-badge{
+    background-color:var(--skills);
+    color:#371545;
+}
+
+#apiTempo-designs{
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+}
+
+#apiTempo-vid{
+    height: 350px;
+    width: fit-content;
+}
+
+
+
+
+#tickets-designs{
+    flex-direction: row;
+    gap: 1rem;
+}
+
+#ticket-mobile{
+    height: 600px;
+    width: fit-content;
+    object-fit: contain;
+}
+
+#ticket-desktop{
+    width: 100% ;
+    object-fit: contain;
+}
+
+ul{
+     list-style-type: "📝";
+}
+
+
+#waze-designs{
+    display: flex;
+    align-items: center;
+}
+
+#waze-designs>video{
+    height: 65% ;
+    border-radius: 8px;
+    width: fit-content;
+}
+
+#waze-designs~.container-legenda{
+    text-align: center;
+}
+
+.ativa{
+    height: 500px;
+    width: 1000px;
+    position: absolute;
+    box-shadow: 0 0 100px rgba(15,15,15,1);
+}
+
+@media (max-width:450px){
+    #apiTempo-vid {
+        height: fit-content;
+        width: 100%;
+    }
+
+    .ativa{
+        height: 29%;
+    width: 100dvw;
+    }
+    
+    .container-fotos-projeto:has(.ativa){
+          grid-template-columns: 20% auto 20%;
+    }
+
+    small{
+        line-height:.5rem
+    }
+
+    #tickets-designs{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #waze-designs>video{
+        width: 100%;
+    }
+}

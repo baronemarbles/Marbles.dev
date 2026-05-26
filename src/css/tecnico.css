@@ -1,0 +1,29 @@
+@import "/src/css/global.css";
+@import "/src/css/footer.css";
+@import "/src/css/experiencias.css";
+
+/* h2{
+    text-align: center;
+} */
+
+
+.container-legenda{
+    text-align: center;
+}
+
+#top15-designs{
+    flex-direction: row;
+    justify-content: center;
+}
+
+#top15-designs>video{
+    height: 600px;
+    width: 300px;
+    object-fit:contain;
+}
+
+#light-highlight{
+    background-color:#a1ffc8;
+    padding-inline: 5px;
+    color: inherit;
+}

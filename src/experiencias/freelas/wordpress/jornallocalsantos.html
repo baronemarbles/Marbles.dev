@@ -1,0 +1,106 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+    <header>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="/src/css/experiencias.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+        <title>Experiência->Fatos e Fontes</title>
+    </header>
+    <body>
+        <div class="root">
+            <div class="head-content">
+                <a href="/src/index.html"><button class="botao-voltar">&#128072Voltar</button></a>
+
+                <h1>Jornal Local Santos</h1>
+                
+                <div class="duracao-container">
+                    <img src="/src/assets/calendarioSVG.svg" alt="imagem SVG de um calendário">
+                    <h4>Setembro 2025 - Presente</h4>
+                </div>    
+
+                <div class="badges-container d-flex">
+                    <div class="first-row row d-flex">
+                        <div class="badge" id="projeto-badge" style="--highlight:#c292ff">Projeto</div>
+                        <div class="badge" id="wordpress-badge" style="--highlight:#a7acf9">Wordpress</div>
+                        <div class="badge" id="freela-badge" style="--highlight:#a3a3a3">Freela</div>
+                    </div>                
+                </div>
+            </div>
+            <div class="recuo-padrao" id="descricao-section">
+                <h3>História</h3>
+    
+                <p>Graças a uma amiga, tive contato com os donos do <a href="https://jornallocalsantos.com.br">Jornal Local Santos</a> e desde então tive a oportunidade de desenvolver o tema do site deles.</p>
+                <br>
+                <p>Este projeto foi diferente, porque o site já tinha o seu tema próprio e minha missão foi refazer o design e criar um tema próprio.</p>
+                <div class="container-identidades-visuais">
+                    <img class="identidades-visuais"src="/src/assets/jornallocalsantos/single.png" alt="Banner que fiz para o canal do Youtube do FF" style="box-shadow:0 0 30px rgba(20,20,20,.125);">
+                    <small>Vizualização de um <a href="https://jornallocalsantos.com.br/2026/05/08/conferencia-debate-candidatura-do-engenho-dos-erasmos-a-patrimonio-mundial-da-unesco/">post</a> do site</small>
+                </div>
+                <br>
+
+                <h3>Desafios</h3>
+                <p>Desta vez o propósito não era construir em cima de um tema existente, e sim criar um do zero. Com os próprios Hooks, minha estrutura de arquivos etc. Utilizei o template do <a href="https://underscores.me/">Underscore.me</a> e comecei a desenvolver a partir daí.</p>
+                <p>Também utilizei post's e campos customizados, <em>WP_Queries. E para isso utilizei dos plug-ins:</em></p>
+                <ul>
+                    <li>Advanced Custom Fields</li>
+                    <li >Custom Post Types UI</li>
+                </ul>
+            </div>
+
+            <div id="fotos-section">
+                
+                <h3 class="recuo-padrao title-media-section">Fotos do site&#128247</h3>
+    
+                <div class="container-fotos-projeto d-grid" id="coletanea-fatosefontes">
+                    <div class="grid-offset" id="left-side-grid">
+    
+                    </div>
+                    
+                    <div id="content-grid">
+                        <div class="row d-flex" id="first-row">
+                            <div class="container-foto" id="foto-1"><img src="/src/assets/jornallocalsantos/home-1.png" alt="imagem de uma seção do site do Jornal Local Santos"></div>
+                            <div class="container-foto" id="foto-2"><img src="/src/assets/jornallocalsantos/home-2.png" alt="imagem de uma seção do site do Jornal Local Santos"></div>
+                        </div>
+    
+                        <div class="row d-flex" id="second-row">
+                            <div class="container-foto" id="foto-3"><img src="/src/assets/jornallocalsantos/home-3.png" alt="imagem de uma seção do site do Jornal Local Santos"></div>
+                            <div class="container-foto" id="foto-4"><img src="/src/assets/jornallocalsantos/home-4.png" alt="imagem de uma seção do site do Jornal Local Santos"></div>
+                        </div>
+    
+                        <div class="row d-flex" id="third-row">
+                            <div class="container-foto" id="foto-5"><img src="/src/assets/jornallocalsantos/home-5.png" alt="imagem de uma seção do site do Jornal Local Santos"></div>
+                            <div class="container-foto" id="foto-6"><img src="/src/assets/jornallocalsantos/home-6.png" alt="imagem de uma seção do site do Jornal Local Santos"></div>
+                        </div>
+                    </div>
+    
+                    <div class="grid-offset" id="right-side-grid"></div>
+    
+                </div>
+            </div>
+
+        
+
+            <footer>
+                <h2 class="titulos-secao" id="titulo-secao-email">Ficou <a>interessado</a> sobre meu trabalho ?</h2>
+                <h2 class="titulos-secao" id="titulo-secao-email-destaque">Vamos conversar!</h2>
+                <div class="form-container">
+                    <form class=" formulario d-flex" action="https://formsubmit.co/5d43cd76a6474870756ec90a44165499" method="POST">
+                        <input type="hidden" name="_subject" value="Novo envio do formulário do Portifolio!">
+                        <input type="hidden" name="_blacklist" value="Sua conta foi suspensa/bloqueada. Clique aqui para atualizar,Verifique sua identidade agora ou perderá o acesso,Sua conta tem um login suspeito">
+                        <input type="text" name="name" placeholder="Sua mensagem">
+                        <input type="email" name="email" placeholder="Seu e-mail" required>
+                        <button type="submit">Enviar &#128521</button>
+                        <input type="hidden" name="_autoresponse" value="Obrigado por entrar em contato! Em breve o responderei.">
+                        <input type="hidden" name="_next" value="http://127.0.0.1:5501/thx-page.html">
+                    </form> 
+                </div>
+            </footer>
+        </div>
+    </body>
+    
+
+    <script src="/src/js/fatosefontes.js"></script>
+</html>

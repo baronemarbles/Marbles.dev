@@ -1,0 +1,85 @@
+@import "./global.css";
+@import "./footer.css";
+@import "./experiencias.css";
+@import "./carrossel.css";
+
+h1{
+    margin-bottom: 1.2rem;
+}
+
+#observacao-disciplina{
+    color: var(--bg-content);
+}
+
+.container-ementa-curso{
+    flex-direction: column;
+    gap:1.5rem
+}
+
+.tabela-ementa{
+    width: 50%;
+}
+
+td{
+    padding: .5rem;
+    border: 1px solid;
+}
+
+th{
+    border: 1px solid;
+}
+
+#projeto-traducao-livro-designs{
+    flex-direction:row;
+    gap: 2.5%;
+    justify-content: center;
+}
+
+.container-fotos-livro>img{
+    width: 100%;
+}
+
+.container-fotos-livro{
+    flex-direction: column;
+    width: 45%;
+}
+
+.projetos-academicos-section{
+    justify-content: center;
+}
+
+
+.container-foto-projeto-academico{
+    width: 50%;
+}
+
+.container-foto-projeto-academico>a>img{
+    width: 100%;
+    border-radius: 8px;
+}
+
+/*carrossel override*/
+.projeto>a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.projeto>a>h3{
+    position: absolute;
+    z-index:2;
+    color: #f0f0f0;
+    text-shadow: 0 0 20px rgba(30,30,30,.5);
+    text-align: center;
+    text-wrap: balance;
+}
+
+.projeto>a>img{
+    width: 100%;
+    height:100%;
+    object-fit:cover;
+    filter: brightness(65%);
+    border-radius: inherit;
+
+}

@@ -1,0 +1,8 @@
+@import "./global.css";
+@import "./footer.css";
+@import "./experiencias.css";
+
+#projeto-academico-ia-designs{
+    flex-direction: row;
+    gap:1.5rem;
+}

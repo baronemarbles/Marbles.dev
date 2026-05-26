@@ -1,0 +1,24 @@
+@import "./css/global.css";
+.head-content{
+    /* display: flex;
+    flex-direction:column; */
+    padding: 1rem;
+}
+
+.head-content>h2{
+    height: fit-content;
+    width: fit-content;
+    margin-inline:auto;
+    margin-bottom: .5rem;
+}
+
+.head-content>h3{
+    height: fit-content;
+    width: fit-content;
+    margin-inline:auto;
+    color: #eaeaea;
+    background-color: #202020;
+    padding: .5rem 1rem;
+    border-radius: 1.2rem;
+    line-height: 1.2rem;
+}
